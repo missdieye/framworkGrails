@@ -1,0 +1,268 @@
+/* Style pour la page login  */
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0;
+}
+.container {
+	height: 100%;
+	display: grid;
+}
+.header {
+	background-color: #00b0db;
+}
+.slider {
+	display: flex;
+	flex-direction: column;
+	background-color: darkgray;
+	align-items: center;
+}
+img.user {
+	clip-path: ellipse(44% 37%);
+	font-size: 60px;
+	color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin: 0 auto;
+}
+h1 {
+	color: white;
+}
+h2 {
+	align-self: center;
+}
+p {
+	font-size: 20px;
+}
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.form-group {
+	margin-top: 80px;
+}
+input {
+	width: 400px;
+	height: 40px;
+}
+input[type="submit"] {
+	margin-bottom: 20px;
+	margin-top: 200px;
+	background-color: #00b0db;
+	border-radius: 3px;
+	border-color: #00b0db;
+	color: white;
+}
+.footer {
+	margin-top: auto;
+	color: white;
+	background-color: #00b0db;
+}
+/* 
+
+
+
+ */
+
+/* Style pour la page Annonce  */
+.menu {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto;
+	grid-template-areas: "allads myads";
+	color: white;
+	height: 40px;
+}
+.allads {
+	display: flex;
+
+	grid-area: allads;
+	background-color: #00b0dbc9;
+	align-items: center;
+	justify-content: space-around;
+}
+.myads {
+	display: flex;
+	grid-area: myads;
+	background-color: #00b0db;
+	align-items: center;
+	justify-content: space-around;
+}
+.mainads {
+	display: flex;
+	flex-wrap: wrap;
+}
+.adimg {
+	grid-area: adimg;
+}
+.adtitle {
+	grid-area: adtitle;
+}
+h2.titleadd {
+	margin-bottom: 0px;
+}
+.addesc {
+	grid-area: addesc;
+}
+.adtime {
+	grid-area: adtime;
+}
+.adprice {
+	grid-area: adprice;
+}
+
+@media screen and (max-width: 480px) {
+	.ad {
+		display: grid;
+		width: 100%;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"adimg"
+			"adtitle"
+			"addesc"
+			"adtime"
+			"adprice";
+		background-color: #fff;
+		border-radius: 10px;
+		box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+		max-width: 100%;
+		margin: 20px;
+		padding: 10px;
+	}
+	.adimg {
+		margin-right: 0px;
+	}
+	.menu {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"allads "
+			"myads";
+		color: white;
+		height: 80px;
+	}
+}
+@media screen and (min-width: 480px) and (max-width: 650px) {
+	.ad {
+		display: grid;
+		width: 100%;
+		grid-template-columns: 40% 30% 20% 20%;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"adimg adtitle adtitle  adtitle"
+			"adimg addesc addesc addesc"
+			"adimg adtime . adprice";
+		background-color: #fff;
+		border-radius: 10px;
+		box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+		max-width: 100%;
+		margin: 20px;
+		padding: 10px;
+	}
+	.adimg {
+		margin-right: 20px;
+	}
+}
+
+@media screen and (min-width: 650px) and (max-width: 850px) {
+	.ad {
+		display: grid;
+		width: 40%;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"adimg"
+			"adtitle"
+			"addesc"
+			"adtime"
+			"adprice";
+		background-color: #fff;
+		border-radius: 10px;
+		box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+		max-width: 100%;
+		margin: 20px;
+		padding: 10px;
+	}
+	.adimg {
+		margin-right: 0px;
+	}
+}
+
+@media screen and (min-width: 850px) and (max-width: 1200px) {
+	.ad {
+		display: grid;
+		width: 40%;
+		grid-template-columns: 40% 30% 20% 20%;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"adimg adtitle adtitle  adtitle"
+			"adimg addesc addesc addesc"
+			"adimg adtime . adprice";
+		background-color: #fff;
+		border-radius: 10px;
+		box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+		max-width: 100%;
+		margin: 20px;
+		padding: 10px;
+	}
+	.adimg {
+		margin-right: 20px;
+	}
+}
+@media screen and (min-width: 1200px) and (max-width: 1430px) {
+	.ad {
+		display: grid;
+		width: 28%;
+		grid-template-columns: 40% 30% 20% 20%;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"adimg adtitle adtitle  adtitle"
+			"adimg addesc addesc addesc"
+			"adimg adtime . adprice";
+		background-color: #fff;
+		border-radius: 10px;
+		box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+		max-width: 100%;
+		margin: 20px;
+		padding: 10px;
+	}
+	.adimg {
+		margin-right: 20px;
+	}
+}
+@media screen and (min-width: 1430px) {
+	.ad {
+		display: grid;
+		width: 20%;
+		grid-template-columns: 40% 30% 20% 20%;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"adimg adtitle adtitle  adtitle"
+			"adimg addesc addesc addesc"
+			"adimg adtime . adprice";
+		background-color: #fff;
+		border-radius: 10px;
+		box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+		max-width: 100%;
+		margin: 20px;
+		padding: 10px;
+	}
+	.adimg {
+		margin-right: 20px;
+	}
+}
+
+img.imageadd {
+	width: 100%;
+	height: 100%;
+}
