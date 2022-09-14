@@ -10,4 +10,5 @@ Dans le dossier projet1, vous trouverez les dossiers:
 * **views** : contenant les deux pages html statiques annonces.html(Page de listing d’annonces) et login.html(Page de login).
 * **images** : où sont stockées toutes les images.
 * **css** : dans lequel nous avons un fichier css permettant de donner du style à nos deux pages.
+
 Pour voir les résultats, il faut ouvrir les fichiers annonces.html et login.html avec un navigateur web.
